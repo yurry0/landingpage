@@ -356,15 +356,14 @@ footer{
 }
 
 #botao-enviar{
-    background-color: #00689b;
-    font-family: helvetica;
+    background-color: #ff6666   ;
+    font-family: "Figtree", sans-serif;   
     font-size: 10px;
     color: #fff;
-    height: 40px;
-    scale: 100%;
-    width: 15%;
+    height: 60px;
+    width: 30%;
     border: 1px solid black;
-    font-size: 12px;
+    font-size: 18px;
     border-radius: 8px;
     transition: 400ms;
 }
@@ -372,7 +371,7 @@ footer{
 #botao-enviar:hover{
     scale: 110%;
     transition: 400ms;
-    background-color: green;
+    background-color: #00689b;
 
 }
 
@@ -385,3 +384,8 @@ footer{
     margin-bottom: 0;
     margin-top: 0px;
  } 
+
+ .form-title h3{
+    text-align: center;
+    font-size: 40px;
+ }
