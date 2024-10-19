@@ -7,7 +7,10 @@
     , initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,24 +31,26 @@
                 <div class="hero-text">
                     <h1>Landing Page - Yuri Martins</h1>
                     <p>Uma landing page dedicada aos meus trabalhos. Seja bem-vindo(a)!</p>
-                    <a href="#contato">Entre em contato!</a>
+                    <a href="#contato" id="calltoaction">Entre em contato!</a>
                 </div>
             </div>
         </div>
 
         <!-- SEÇÃO SOBRE -->
         <section id="sobre">
+            <h2 class="sobre-title">Sobre mim</h2>
             <div class="sobre-container">
-                <h2 class="sobre-title">Sobre mim</h2>
                 <div class="sobre-item">
                     <img id="profile-photo" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
                         width="220" alt="">
-                        <p id="sobre_desc">Yuri Martins</p>
-                        <p id="sobre_desc">26</p>
-                        <p id="sobre_desc">Fortaleza, CE - Brasil</p>
-                        <h3>Interesses:</h3>
-                    
-
+                    <div class="sobre-desc">
+                        <p>Yuri Martins</p>
+                        <p>26 anos</p>
+                        <p>Fortaleza, CE - Brasil</p>
+                    </div>
+                    <span>Interesses</span>
+                </div>
+                <div class="sobre-item">
                     <ul id="interesses">
                         <li id="prog_web">Programação Web </li>
                         <li id="audiovisu">Edição de Vídeo</li>
@@ -60,37 +65,37 @@
         <section id="projetos">
             <h2>Projetos</h2>
             <div class="projetos-container">
-            <p id="project_desc">Aqui onde você pode conhecer um pouco do meu trabalho!</p>
-            
-            <!-- CARDS -->
+                <p id="project_desc">Aqui onde você pode conhecer um pouco do meu trabalho!</p>
 
-        <div class="card-container">
-            <div class="card">
-                <img src="./images/placeholder.webp" alt="">
-                <div class="card-content">
-                    <h3>Front-End para Mercantil A</h3>
-                    <p>Desenvolvimento do front-end para uma página de vendas on-line.</p>
-                    <a href="" class="btn">Acessar</a>
+                <!-- CARDS -->
+
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./images/placeholder.webp" alt="">
+                        <div class="card-content">
+                            <h3>Front-End para Mercantil A</h3>
+                            <p>Desenvolvimento do front-end para uma página de vendas on-line.</p>
+                            <a href="" class="btn">Acessar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/placeholder.webp" alt="">
+                        <div class="card-content">
+                            <h3>Desenvolvimento Mobile em React</h3>
+                            <p>Aplicativo de gerenciamento de pet shop para iOS / Android.</p>
+                            <a href="" class="btn">Acessar</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/placeholder.webp" alt="">
+                        <div class="card-content">
+                            <h3>Cobertura do Evento Y</h3>
+                            <p>Cobertura audiovisual do evento Y (Fotografia e Filmagem)</p>
+                            <a href="" class="btn">Acessar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="./images/placeholder.webp" alt="">
-                <div class="card-content">
-                    <h3>Desenvolvimento Mobile em React</h3>
-                    <p>Aplicativo de gerenciamento de pet shop para iOS / Android.</p>
-                    <a href="" class="btn">Acessar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="./images/placeholder.webp" alt="">
-                <div class="card-content">
-                    <h3>Cobertura do Evento Y</h3>
-                    <p>Cobertura audiovisual do evento Y (Fotografia e Filmagem)</p>
-                    <a href="" class="btn">Acessar</a>
-                </div>
-            </div>
-        </div>
-        </div>
         </section>
         <!-- FIM SEÇÃO PROJETOS -->
 
@@ -100,17 +105,19 @@
             <form id="contato-form" action="">
                 <div class="form-item">
                     <label for="nome">Nome</label>
-                    <input type="text"  name="nome" id="nome" placeholder="" class="nome required" oninput="nameValidate()"> <br>
+                    <input type="text" name="nome" id="nome" placeholder="" class="nome required"
+                        oninput="nameValidate()"> <br>
                     <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                 </div>
                 <div class="form-item">
                     <label for="email">E-mail</label>
-                    <input type="email"  name="email" id="email" class="email required" oninput="emailValidate()"><br>
+                    <input type="email" name="email" id="email" class="email required" oninput="emailValidate()"><br>
                     <span class="span-required">Digite um e-mail no formato válido.</span>
                 </div>
                 <div class="form-item">
                     <label for="mensagem">Escreva sua mensagem</label><br>
-                    <textarea name="mensagem" id="mensagem" rows="5" cols="50" class="textarea required" oninput="messageValidate()"></textarea><br>
+                    <textarea name="mensagem" id="mensagem" rows="5" cols="50" class="textarea required"
+                        oninput="messageValidate()"></textarea><br>
                     <span class="span-required">A mensagem não pode ser deixada em branco. Fala comigo!</span>
                 </div>
                 <div class="form-item">
@@ -121,10 +128,13 @@
         <!-- FIM SEÇÃO CONTATO -->
     </main>
     </div>
-    <footer> 2024 Juventude Digital</footer>
+    <footer> 2024 Juventude Digital
+        <i></i>
+    </footer>
 
     <!-- Script -->
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
