@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -38,15 +40,20 @@
 
         <!-- SEÇÃO SOBRE -->
         <section id="sobre">
-            <h2 class="sobre-title">Sobre mim</h2>
             <div class="sobre-container">
+                <h2 class="sobre-title">Sobre mim</h2>
                 <div class="sobre-item">
                     <img id="profile-photo" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
                         width="220" alt="">
                     <div class="sobre-desc">
-                        <p>Yuri Martins</p>
-                        <p>26 anos</p>
-                        <p>Fortaleza, CE - Brasil</p>
+                        <div class="sobre-desc-text">
+                            <p>Yuri Martins</p>
+                            <p>26 anos</p>
+                            <p>Fortaleza, CE - Brasil</p>
+                        </div>
+                        <div class="sobre-desc-link">
+                            <a target="_blank" href="https://github.com/yurry0">Github</a>
+                        </div>
                     </div>
                     <span>Interesses</span>
                 </div>
@@ -66,12 +73,13 @@
             <h2>Projetos</h2>
             <div class="projetos-container">
                 <p id="project_desc">Aqui onde você pode conhecer um pouco do meu trabalho!</p>
+                <p id="project_desc_aviso">(Projetos fictícios por enquanto!)</p>
 
                 <!-- CARDS -->
 
                 <div class="card-container">
                     <div class="card">
-                        <img src="./images/placeholder.webp" alt="">
+                        <img src="./images/projeto1.jpg" alt="">
                         <div class="card-content">
                             <h3>Front-End para Mercantil A</h3>
                             <p>Desenvolvimento do front-end para uma página de vendas on-line.</p>
@@ -79,7 +87,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./images/placeholder.webp" alt="">
+                        <img src="./images/projeto2.jpg" alt="">
                         <div class="card-content">
                             <h3>Desenvolvimento Mobile em React</h3>
                             <p>Aplicativo de gerenciamento de pet shop para iOS / Android.</p>
@@ -87,7 +95,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./images/placeholder.webp" alt="">
+                        <img src="./images/projeto3.jpg" alt="">
                         <div class="card-content">
                             <h3>Cobertura do Evento Y</h3>
                             <p>Cobertura audiovisual do evento Y (Fotografia e Filmagem)</p>
@@ -128,13 +136,15 @@
         <!-- FIM SEÇÃO CONTATO -->
     </main>
     </div>
-    <footer> 2024 Juventude Digital
-        <i></i>
+    <footer>
+        <div class="footer-container">
+            <span>Juventude Digital</span>
+            <i class="fa-brands fa-github"></i>
+        </div>
     </footer>
 
     <!-- Script -->
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
