@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="body-container">
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Entre em contato!</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="landing-container">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <h1>Landing Page - Yuri Martins</h1>
+                    <p>Uma landing page dedicada aos meus trabalhos. Seja bem-vindo(a)!</p>
+                    <a href="#contato">Entre em contato!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre">
+            <div class="sobre-container">
+                <h2 class="sobre-title">Sobre mim</h2>
+                <div class="sobre-item">
+                    <img id="profile-photo" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+                        width="220" alt="">
+                        <p id="sobre_desc">Yuri Martins</p>
+                        <p id="sobre_desc">26</p>
+                        <p id="sobre_desc">Fortaleza, CE - Brasil</p>
+                        <h3>Interesses:</h3>
+                    
+
+                    <ul id="interesses">
+                        <li id="prog_web">Programação Web </li>
+                        <li id="audiovisu">Edição de Vídeo</li>
+                        <li id="fotografia">Fotografia</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- FIM SEÇÃO SOBRE -->
+
+        <!-- SEÇÃO PROJETOS -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos-container">
+            <p id="project_desc">Aqui onde você pode conhecer um pouco do meu trabalho!</p>
+            
+            <!-- CARDS -->
+
+        <div class="card-container">
+            <div class="card">
+                <img src="./images/placeholder.webp" alt="">
+                <div class="card-content">
+                    <h3>Front-End para Mercantil A</h3>
+                    <p>Desenvolvimento do front-end para uma página de vendas on-line.</p>
+                    <a href="" class="btn">Acessar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/placeholder.webp" alt="">
+                <div class="card-content">
+                    <h3>Desenvolvimento Mobile em React</h3>
+                    <p>Aplicativo de gerenciamento de pet shop para iOS / Android.</p>
+                    <a href="" class="btn">Acessar</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/placeholder.webp" alt="">
+                <div class="card-content">
+                    <h3>Cobertura do Evento Y</h3>
+                    <p>Cobertura audiovisual do evento Y (Fotografia e Filmagem)</p>
+                    <a href="" class="btn">Acessar</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <!-- FIM SEÇÃO PROJETOS -->
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <h2>Gostou? Entre em contato comigo através deste formulário: </h2>
+            <form id="contato-form" action="">
+                <div class="form-item">
+                    <label for="nome">Nome</label>
+                    <input type="text"  name="nome" id="nome" placeholder="" class="nome required" oninput="nameValidate()"> <br>
+                    <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail</label>
+                    <input type="email"  name="email" id="email" class="email required" oninput="emailValidate()"><br>
+                    <span class="span-required">Digite um e-mail no formato válido.</span>
+                </div>
+                <div class="form-item">
+                    <label for="mensagem">Escreva sua mensagem</label><br>
+                    <textarea name="mensagem" id="mensagem" rows="5" cols="50" class="textarea required" oninput="messageValidate()"></textarea><br>
+                    <span class="span-required">A mensagem não pode ser deixada em branco. Fala comigo!</span>
+                </div>
+                <div class="form-item">
+                    <input id="botao-enviar" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <!-- FIM SEÇÃO CONTATO -->
+    </main>
+    </div>
+    <footer> 2024 Juventude Digital</footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
