@@ -1,7 +1,7 @@
 const form = document.getElementById('contato-form');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required')
-const emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 let errorFlag = true;
 
 form.addEventListener('submit', (event) => {
@@ -12,9 +12,16 @@ form.addEventListener('submit', (event) => {
 
     if(errorFlag === false){
         console.log(errorFlag);
-        window.alert('Formulário enviado com sucesso!')
+        mostrarModal();
         errorFlag = true;
+        campos[0].value = '';
+        campos[1].value = '';
+        campos[2].value = '';
+        spans[index].style.display = 'none';
+        campos[index].style.border = 'none';
     }
+
+    
 });
 
 function setError(index) {
@@ -57,4 +64,14 @@ function messageValidate() {
     else {
         removeError(2);
     }
+}
+
+/* MODAL */
+const modal = document.querySelector("dialog");
+const buttonModal = document.getElementById("closeModal");
+function mostrarModal(){
+    modal.showModal();
+}
+buttonModal.onclick = () =>{
+    modal.close();
 }
