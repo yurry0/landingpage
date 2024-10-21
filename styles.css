@@ -24,8 +24,10 @@
   }
 
   #contato-form input {
-    min-width: 100%;
-    max-width: 100%;
+    width: 80%;
+  }
+  #contato-form textarea {
+    max-width: 80;
   }
   #contato h2 {
     color: white;
@@ -64,7 +66,7 @@
     box-shadow: 24px 16px 3px 0px rgba(0, 0, 0, 0.1);
   }
 
-  #interesses {
+  #interesses li {
     list-style: none;
     display: grid;
     justify-content: center;
@@ -72,15 +74,10 @@
     color: rgb(255, 255, 255);
     margin-bottom: 0;
     margin-top: 5%;
-  }
-  #interesses {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    color: rgb(182, 182, 182);
-    margin-bottom: 0;
-    margin-top: 5%;
+    animation: mymove 4s;
+    animation-iteration-count: infinite;
+    transition: 300ms;
+    margin-left: 10px;
   }
 }
 
@@ -154,15 +151,12 @@ nav a {
 }
 
 .sobre-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-top: 4%;
-  margin-bottom: 20%;
+  padding-top: 0;
+  margin-top: 0;
+  box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.1);
   background-color: #ff6666;
-  width: 80%;
-  margin: 0 auto;
+  margin-bottom: 0;
   padding-bottom: 4%;
-  box-shadow: 24px 16px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .sobre-desc {
   margin-top: 20%;
@@ -212,19 +206,35 @@ nav a {
 }
 #interesses {
   list-style: none;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
   gap: 20px;
   color: rgb(182, 182, 182);
   margin-bottom: 0;
   margin-top: 5%;
+  animation: mymove 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+  0% {
+    color: grey;
+  }
+  50% {
+    color: #e2e2e2;
+  }
+
+  0% {
+    color: grey;
+  }
 }
 
 #prog_web,
 #audiovisu,
 #fotografia {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 #prog_web:hover,
