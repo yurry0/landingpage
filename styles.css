@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+#kdvc {
+  width: 500px;
+}
+
 @media (max-width: 1490px) {
   .sobre-container {
     min-width: fit-content;
@@ -177,6 +181,8 @@ nav a {
 .sobre-desc-link {
   margin-top: 10%;
   margin-bottom: 4%;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .sobre-item {
   display: grid;
@@ -208,13 +214,18 @@ nav a {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 20px;
   color: rgb(182, 182, 182);
   margin-bottom: 0;
   margin-top: 5%;
   animation: mymove 4s;
   animation-iteration-count: infinite;
+}
+
+#interesses li {
+  display: grid;
+  justify-content: space-evenly;
 }
 
 @keyframes mymove {
@@ -234,7 +245,11 @@ nav a {
 #audiovisu,
 #fotografia {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
+}
+
+#fotografia {
+  margin-left: -35%;
 }
 
 #prog_web:hover,
